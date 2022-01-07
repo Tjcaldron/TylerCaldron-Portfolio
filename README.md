@@ -1,23 +1,17 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+The purpose of this code is to demonstrate the use of coding language and compilers using pyhton, visual studio, and Github.
+It is a pretty simple way to do it, but it demonstrates the usefulness that such programs have when coding.
 
-{Provide a description of your software}
-
-{Describe your purpose for creating this software.}
-
-{Provide a link to your YouTube demonstration.  It should be a one minute demo of the software running and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/8wn9FN2mkE0)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used}
+The tools that I used for this assignment were the VS code program and github. 
+The language that I used for the code was python v.3.9 64 bit 
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [Web Site Name](https://byui-cse.github.io/cse310-course/lesson01/01-prove_campus.html)
+
