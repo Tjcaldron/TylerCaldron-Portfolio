@@ -12,6 +12,6 @@ The language that I used for the code was python v.3.9 64 bit
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
+
 * [Web Site Name](https://byui-cse.github.io/cse310-course/lesson01/01-prove_campus.html)
 
