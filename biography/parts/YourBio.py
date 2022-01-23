@@ -11,11 +11,11 @@ class displayMenu:
 
 
     
-def displayBio(current_Bio):
-    print('{:*<9}'.format('*'), "shopping list", '{:*>9}'.format('*'))
-    for i in current_Bio:
-        print('{:*<1}'.format('*'), '{}'.format(i), '{: >25}'.format('*'))
-    print('{:*<33}'.format('*'))
+    def displayBio(current_Bio):
+        print('{:*<9}'.format('*'), "shopping list", '{:*>9}'.format('*'))
+        for i in current_Bio:
+            print('{:*<1}'.format('*'), '{}'.format(i), '{: >25}'.format('*'))
+        print('{:*<33}'.format('*'))
 
    
 
