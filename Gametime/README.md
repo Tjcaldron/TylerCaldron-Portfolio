@@ -1,14 +1,9 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+The purpose of the code that I wrote was to get a basic understanding of how the pygame library works for game creation. 
+I created a basic platformer game that can move upwards spawning in new platforms until the player chooses to quit or they miss a platform, intiating a "game over". 
 
-{Provide a description the game that you wrote. Describe how to play your game.}
-
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the game being played and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/kC2Vrq4-ktY)
 
 # Development Environment
 
