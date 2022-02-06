@@ -23,19 +23,21 @@ class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__() 
         #meant to assign the image in the assets folder as the sprite, but doesn't work.
-        ##self.image = pygame.image.load('img/sprite.png')
+        ##self.surf = pygame.image.load("image/sprite.png")
+        ##self.rect = self.surf.get_rect()
         self.surf = pygame.Surface((30, 30))
-        self.surf.fill((255,255,0))
+        self.surf.fill((30,144,255))
         self.rect = self.surf.get_rect()
-   
+   #assign the physics for velocity of player
         self.pos = vec((10, 360))
         self.vel = vec(0,0)
         self.acc = vec(0,0)
         self.jumping = False
  
+ #moves the player model around the screen 
     def move(self):
         self.acc = vec(0,0.5)
-    
+    # receives the user input continually while game is running 
         pressed_keys = pygame.key.get_pressed()
                 
         if pressed_keys[K_LEFT]:
@@ -53,7 +55,7 @@ class Player(pygame.sprite.Sprite):
             self.pos.x = WIDTH
              
         self.rect.midbottom = self.pos
- 
+ #makes sure you don't hit your head when jumping
     def jump(self): 
         hits = pygame.sprite.spritecollide(self, platforms, False)
         if hits and not self.jumping:
@@ -74,7 +76,7 @@ class Player(pygame.sprite.Sprite):
                     self.vel.y = 0
                     self.jumping = False
  
- 
+#makes more platforms for jumping
 class platform(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
@@ -86,7 +88,7 @@ class platform(pygame.sprite.Sprite):
     def move(self):
         pass
  
- 
+#prevents platform grouping
 def check(platform, groupies):
     if pygame.sprite.spritecollideany(platform,groupies):
         return True
@@ -97,9 +99,9 @@ def check(platform, groupies):
             if (abs(platform.rect.top - entity.rect.bottom) < 40) and (abs(platform.rect.bottom - entity.rect.top) < 40):
                 return True
         C = False
- 
+#makes more platforms when the amount on the screen is below 6
 def plat_gen():
-    while len(platforms) < 6:
+    while len(platforms) < 7:
         width = random.randrange(50,100)
         p  = platform()      
         C = True
@@ -112,8 +114,7 @@ def plat_gen():
         platforms.add(p)
         all_sprites.add(p)
  
- 
-        
+         
 PT1 = platform()
 P1 = Player()
  
@@ -127,7 +128,7 @@ all_sprites.add(P1)
  
 platforms = pygame.sprite.Group()
 platforms.add(PT1)
- 
+#make them look pretty 
 for x in range(random.randint(4,5)):
     C = True
     pl = platform()
@@ -150,14 +151,14 @@ while True:
         if event.type == pygame.KEYUP:    
             if event.key == pygame.K_SPACE:
                 P1.cancel_jump()  
- 
+ #infinite upwards movement!
     if P1.rect.top <= HEIGHT / 3:
         P1.pos.y += abs(P1.vel.y)
         for plat in platforms:
             plat.rect.y += abs(P1.vel.y)
             if plat.rect.top >= HEIGHT:
                 plat.kill()
- 
+ #tells you that you are bad at the game
     if P1.rect.top > HEIGHT:
         for entity in all_sprites:
             entity.kill()
