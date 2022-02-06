@@ -6,13 +6,13 @@ class displayMenu:
         print('   e - Edit an item')
         print('   c - Check or remove item from list')
         print('   ? - Display this menu')
-        print('   q - Quit pogram')
+        print('   q - Quit progam')
 
 
 
     
     def displayBio(current_Bio):
-        print('{:*<9}'.format('*'), "shopping list", '{:*>9}'.format('*'))
+        print('{:*<9}'.format('*'), "Biography", '{:*>9}'.format('*'))
         for i in current_Bio:
             print('{:*<1}'.format('*'), '{}'.format(i), '{: >25}'.format('*'))
         print('{:*<33}'.format('*'))
