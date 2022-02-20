@@ -15,7 +15,6 @@ I used C# for the programming of my program.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Microsoft.com](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/)
 * [Unity learn](https://learn.unity.com/)
 
