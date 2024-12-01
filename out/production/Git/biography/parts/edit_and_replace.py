@@ -1,5 +1,3 @@
-from responses import *
-
 class user_inputs:
 
     def addToBio(inputBio):

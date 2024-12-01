@@ -1,5 +1,3 @@
-from responses import *
-
 class displayMenu:
     def displayOptions():
         print('Menu')

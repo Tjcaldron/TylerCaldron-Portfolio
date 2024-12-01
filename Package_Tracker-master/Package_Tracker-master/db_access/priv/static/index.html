@@ -1,0 +1,45 @@
+<html>
+ <head>
+	 <script>
+		function helloRequest(){
+			const Http = new XMLHttpRequest();
+			const url='https://web1.fordark.org/';
+			Http.open("GET", url);
+			Http.send();
+
+			Http.onreadystatechange = function(){
+				if(this.readyState == 4 && this.status = 200){
+					querySelector("#display").innerText = Http.responseText
+						 }
+		 	}
+	 	}
+		function setFriendsRequest(){
+					 fetch("https://web1.fordark.org/pfriends", {
+    method: 'post',
+    body: JSON.stringify(["sue","sally","joe"]),
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    }
+}).then((response) => {
+    return response.json()
+}).then((res) => {
+    if (res.status === 201) {
+        console.log("Post successfully created!")
+    }
+}).catch((error) => {
+    console.log(error)
+})
+		 }
+	 </script>
+ </head>
+ <body>
+   <h1>Hello World<h1>
+	<button onclick="setFriendsRequest()">Set Friends</button>
+	<button onclick="getFriendsRequest()">Get Friends</button>
+	<button onclick="helloRequest()">Say Hello</button>
+	<p id="display">
+		ready...
+	</p>
+ </body>
+</html>

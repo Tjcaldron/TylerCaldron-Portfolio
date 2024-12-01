@@ -1,0 +1,155 @@
+----------------
+Project Contract 
+----------------
+Create a Web Service for Package Tracking - API Design, Software Design,
+Unit Testing, Implementation, System Stress Testing.
+
+--------
+Proposal
+--------
+- What it currently is?
+- What's currently wrong with our contract / design?
+- Why do we want to alter our contract / design?
+- Present what's in your proposal on what to change.
+
+---------
+Frontend
+---------
+- User Interface - HTML/CSS/JS
+    -Design a user-friendly interface for users to input packages tracking
+        details, view package status, and request location upadtes.
+- User Experience - User Interface
+    - Design a user-friendly interface for users to input packages tracking.
+- Package Tracking Form
+    - Create a form for users to input package tracking details such as 
+        package ID, sender information and reciient information.
+- Package Status Display
+    - Implement a section where users can view the current status of their
+        package, including whether it has been created, transferred or delivered.
+- Location Request Functionality 
+    -Provide a feature for users to request the current location of their package
+        by entering in the package ID.
+- Location Display
+    -Display the current location of package on a map interface or provide latitute
+        and longitude corrdinates to the user.
+- Error Handling
+    - Implement error handling mechanisms to inform users if there are any issues 
+        with package tracking or location request.
+
+--------
+Backend
+--------
+1- Package Transfered
+    -Package Creation Endpoint
+        - Design an API endpoint and handle package creation requests, which will 
+            generate a unique package ID and store relevant package details in 
+            the database.
+    -Package Transfer Endpoint
+        - Create an endpoint to handle package transfer requests, updating the location
+            of the package in the database
+    - Pseudocode
+        IN
+            {
+            location_id: UUID string,
+            package_id: UUID string
+            }
+        OUT
+            200 on success 500 on error,
+            URL extention /package_transferred
+
+2- Delivered
+    -Package Delivery Endpoint
+        - Implement an endpoint to mark packages as delivered and update their status 
+            accordingly.
+        - Pseudocode
+        IN
+            UUID string (this will be the package_id)
+        OUT 
+            200 on success 500 on error,
+            URL extention /delivered
+            
+3- Customer requests location 
+    -Location Request Endpoint
+        - Design an endpoint to handle location requests, retrieving the current 
+            location of the package based on its ID.
+    - Pseudocode
+        IN 
+            UUID string (this will be the package_id)
+        OUT
+             {lat: float, long: float},
+            200 on success 500 on error
+
+        URL extention /location_request
+
+4- Location Update        
+    -Location Update Endpoint
+        - Create an endpoint to update the location of a package based on incoming 
+            latitude and longitude coordinates
+    - Pseudocode
+        IN
+            {
+                location_id: UUID string,
+                lat: float, long: float
+            }
+        OUT 
+            200 on success 500 on error,
+        URL extention /location_update
+
+--------------
+Hints and Tips
+--------------
+-Database integration 
+    - Integrate Riak to store package information, including package IDs, 
+        statuses, and locations of all packages.
+
+-Error Handling
+    - Implement error handling mechanisms to manage invalid requests, database
+        errors, or other issues that may arise during package tracking.
+    - Will need to document or log all the issues that occur.
+    - Error Logging / Event Handlers
+        -Supervisor
+            -Manage the event and handlers
+            -All errors are events
+                -All non-crashing errors are events for which you would need to
+                    plan a 500 error as an event.
+        -Log all state changes as a UUID and when there is a request that will 
+            initate new state change that way we can Identify where it went 
+            wrong. The UUID can be tied to the UUID so we know where it went wrong.
+
+------------
+Massive Hint
+------------
+- This will be noted in the books -> Event Handler / Error Logger
+- Have a counter for the cycles of the handlers and the managers.
+- Draft a Supervision Tree
+
+
+--------
+Software
+--------
+- The Erlang compiler and runtime
+- Rebar3 
+- Cowboy
+- Riak
+- Text editor of choice
+- erpc (allows you to make calls between machines)
+- rabbitmq (Messaging queue -> Fake API layer for Riak)
+
+--------
+Hardware
+--------
+- Digital Ocean - Given $200 of free usage
+- Create a $6 per month DO Droplet and access it using the web console.
+- Setup SSH on your DO Droplet and access it using the terminal.
+- Crete a user on your DO droplet. Never run as root on any machine.
+- secure your droplet
+- install rebar3 on your droplet using apt.
+
+-----
+Notes
+-----
+- Make sure you keep project app in a qunique GitHub repository. 
+- Put all engineering designs in GitHub.
+- Every *nix system has a limit on how many open files there can be on the system.
+- Don't over engineer your first design. It wont be the last. Let the bottlenecks
+    you discover drive engineering changes that increases the optimization.
