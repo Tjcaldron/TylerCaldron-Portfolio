@@ -3,7 +3,7 @@
 The purpose of this code is to demonstrate the use of coding language and compilers, using Python, Erlang, Java, C#, Visual Studio, and Github.
 It is a pretty simple way to do it, but it demonstrates the usefulness that such programs have when coding.
 
-[Software Demo Video](https://youtu.be/8wn9FN2mkE0)
+
 
 # Work projects
 
