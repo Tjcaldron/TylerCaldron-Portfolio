@@ -63,8 +63,8 @@ class TestS3Storage(unittest.TestCase):
         cls.provider = S3StorageProvider({
             "provider": "aws",
             "bucket": "tc-first-bucket",
-            "access_key": "AKIATHTHX3TYKMLJKY6N", 
-            "secret_key": "Z60oRzkgFeOBSW5ATQF8dueu3VBwwPdXKVbtkujI"
+            "access_key": "Dummy-Key", 
+            "secret_key": "Dummy-secret"
         })
         # Fills the basic information for the new "test file" and sets the testing path
         cls.test_path = "test-folder"
