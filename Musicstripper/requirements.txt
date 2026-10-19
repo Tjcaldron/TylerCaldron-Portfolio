@@ -1,0 +1,23 @@
+# Core separation. This pulls in torch, which is a large download (~2 GB with
+# CUDA support). If you only have CPU, install the CPU-only torch build first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+demucs>=4.0.1
+
+# Audio I/O and numerics
+soundfile>=0.12.1
+numpy>=1.24
+
+# Analysis: tempo, key, duration
+librosa>=0.10.1
+
+# Loudness measurement per EBU R128
+pyloudnorm>=0.1.1
+
+# Config
+pyyaml>=6.0
+
+# Browser UI (python run.py ui)
+gradio>=5.0
+
+# Not installed automatically - install yourself only if you need URL ingest:
+#   yt-dlp

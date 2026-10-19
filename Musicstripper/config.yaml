@@ -1,0 +1,60 @@
+# ---------------------------------------------------------------------------
+# covertools configuration
+# Every value here has a sane default; delete a line to fall back to it.
+# ---------------------------------------------------------------------------
+
+workspace: ./workspace
+
+# --- Separation ------------------------------------------------------------
+# htdemucs_ft  best quality, ~4x slower (runs four specialised sub-models)
+# htdemucs     the sensible default
+# mdx_extra    faster, slightly weaker on drums/bass
+model: htdemucs_ft
+
+# four -> vocals, drums, bass, other   (recommended: gives you control)
+# two  -> vocals, no_vocals            (faster, one-shot instrumental)
+stem_mode: four
+
+# Lower if you run out of GPU memory. Higher is marginally better quality.
+# Note: htdemucs_ft's transformer caps out at 7.8s, and demucs's --segment flag
+# only accepts integers, so 7 is the highest usable value for this model.
+segment_seconds: 7
+
+# Averaging N shifted passes improves quality at N times the cost.
+# 0 = off. Try 2 for a track you actually care about.
+shifts: 0
+
+# auto | cuda | mps | cpu
+device: auto
+
+# --- What goes in the backing track ----------------------------------------
+# Drop "vocals" for a clean instrumental.
+# Add "vocals" back with a large negative gain below if you want a guide.
+backing_stems:
+  - drums
+  - bass
+  - other
+
+# Per-stem trim in dB before summing. The "other" stem is where vocal bleed
+# usually ends up, so a small cut there often cleans things up.
+stem_gains_db:
+  other: 0.0
+  drums: 0.0
+  bass: 0.0
+
+# --- Loudness --------------------------------------------------------------
+# -14 is streaming standard. Backing tracks want to sit lower so your vocal
+# has room. -16 to -18 is the useful range.
+target_lufs: -16.0
+
+# Peak ceiling in dBFS. The 1 dB of margin protects against inter-sample peaks
+# that only appear after lossy encoding.
+peak_ceiling_db: -1.0
+
+# --- Output ----------------------------------------------------------------
+write_flac: false
+write_mp3_preview: true
+mp3_bitrate: 192k
+
+sample_rate: 44100
+channels: 2

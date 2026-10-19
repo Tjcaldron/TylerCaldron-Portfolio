@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "tracks": {
+    "waving-through-a-window-e8926dc9": {
+      "id": "waving-through-a-window-e8926dc9",
+      "title": "Waving Through a Window",
+      "source": "C:\\Users\\Owner\\OneDrive\\Documents\\files\\my-songs\\Waving Through a Window.mp3",
+      "added_at": 1786513106.1636946,
+      "ingested": true,
+      "separated": true,
+      "analyzed": true,
+      "mixed": true,
+      "source_wav": "workspace\\01_source\\waving-through-a-window-e8926dc9.wav",
+      "stem_paths": {
+        "bass": "workspace\\02_stems\\waving-through-a-window-e8926dc9\\bass.wav",
+        "drums": "workspace\\02_stems\\waving-through-a-window-e8926dc9\\drums.wav",
+        "other": "workspace\\02_stems\\waving-through-a-window-e8926dc9\\other.wav",
+        "vocals": "workspace\\02_stems\\waving-through-a-window-e8926dc9\\vocals.wav"
+      },
+      "outputs": {
+        "wav": "workspace\\03_backing\\waving-through-a-window-e8926dc9-instrumental.wav",
+        "mp3": "workspace\\03_backing\\waving-through-a-window-e8926dc9-instrumental.mp3"
+      },
+      "duration_sec": 236.98,
+      "bpm": 95.7,
+      "key": "A major",
+      "key_confidence": 0.46,
+      "source_lufs": -9.014699281052325,
+      "output_lufs": -16.0,
+      "error": null
+    },
+    "just-a-man-b5473bec": {
+      "id": "just-a-man-b5473bec",
+      "title": "Just a Man",
+      "source": "C:\\Users\\Owner\\OneDrive\\Documents\\files\\my-songs\\Just a Man.mp3",
+      "added_at": 1786514294.6988702,
+      "ingested": true,
+      "separated": true,
+      "analyzed": true,
+      "mixed": true,
+      "source_wav": "workspace\\01_source\\just-a-man-b5473bec.wav",
+      "stem_paths": {
+        "bass": "workspace\\02_stems\\just-a-man-b5473bec\\bass.wav",
+        "drums": "workspace\\02_stems\\just-a-man-b5473bec\\drums.wav",
+        "other": "workspace\\02_stems\\just-a-man-b5473bec\\other.wav",
+        "vocals": "workspace\\02_stems\\just-a-man-b5473bec\\vocals.wav"
+      },
+      "outputs": {
+        "wav": "workspace\\03_backing\\just-a-man-b5473bec-instrumental.wav",
+        "flac": "workspace\\03_backing\\just-a-man-b5473bec-instrumental.flac",
+        "mp3": "workspace\\03_backing\\just-a-man-b5473bec-instrumental.mp3"
+      },
+      "duration_sec": 148.7,
+      "bpm": 107.7,
+      "key": "F major",
+      "key_confidence": 0.29,
+      "source_lufs": -9.48345374125499,
+      "output_lufs": -16.24,
+      "error": null
+    },
+    "id-rather-be-me-lyrics-mean-girls-on-broadway-6313c1c0": {
+      "id": "id-rather-be-me-lyrics-mean-girls-on-broadway-6313c1c0",
+      "title": "'I'd Rather Be Me' Lyrics - Mean Girls on Broadway",
+      "source": "C:\\Users\\tjcal\\OneDrive\\Documents\\files\\my-songs\\'I'd Rather Be Me' Lyrics - Mean Girls on Broadway.mp3",
+      "added_at": 1790215314.4280024,
+      "ingested": true,
+      "separated": true,
+      "analyzed": true,
+      "mixed": true,
+      "source_wav": "workspace\\01_source\\id-rather-be-me-lyrics-mean-girls-on-broadway-6313c1c0.wav",
+      "stem_paths": {
+        "bass": "workspace\\02_stems\\id-rather-be-me-lyrics-mean-girls-on-broadway-6313c1c0\\bass.wav",
+        "drums": "workspace\\02_stems\\id-rather-be-me-lyrics-mean-girls-on-broadway-6313c1c0\\drums.wav",
+        "other": "workspace\\02_stems\\id-rather-be-me-lyrics-mean-girls-on-broadway-6313c1c0\\other.wav",
+        "vocals": "workspace\\02_stems\\id-rather-be-me-lyrics-mean-girls-on-broadway-6313c1c0\\vocals.wav"
+      },
+      "outputs": {
+        "wav": "workspace\\03_backing\\id-rather-be-me-lyrics-mean-girls-on-broadway-6313c1c0-instrumental.wav",
+        "flac": "workspace\\03_backing\\id-rather-be-me-lyrics-mean-girls-on-broadway-6313c1c0-instrumental.flac",
+        "mp3": "workspace\\03_backing\\id-rather-be-me-lyrics-mean-girls-on-broadway-6313c1c0-instrumental.mp3"
+      },
+      "duration_sec": 170.69,
+      "bpm": 136.0,
+      "key": "E major",
+      "key_confidence": 1.0,
+      "source_lufs": -7.026689875406332,
+      "output_lufs": -16.0,
+      "error": null
+    },
+    "kristin-chenoweth-popular-from-wicked-original-broadway-cast-463aac5f": {
+      "id": "kristin-chenoweth-popular-from-wicked-original-broadway-cast-463aac5f",
+      "title": "Kristin Chenoweth - Popular (From Wicked Original Broadway Cast Recording 2003 Audio)",
+      "source": "C:\\Users\\tjcal\\OneDrive\\Documents\\files\\my-songs\\Kristin Chenoweth - Popular (From Wicked Original Broadway Cast Recording 2003 Audio).mp3",
+      "added_at": 1790215314.429873,
+      "ingested": true,
+      "separated": true,
+      "analyzed": true,
+      "mixed": true,
+      "source_wav": "workspace\\01_source\\kristin-chenoweth-popular-from-wicked-original-broadway-cast-463aac5f.wav",
+      "stem_paths": {
+        "bass": "workspace\\02_stems\\kristin-chenoweth-popular-from-wicked-original-broadway-cast-463aac5f\\bass.wav",
+        "drums": "workspace\\02_stems\\kristin-chenoweth-popular-from-wicked-original-broadway-cast-463aac5f\\drums.wav",
+        "other": "workspace\\02_stems\\kristin-chenoweth-popular-from-wicked-original-broadway-cast-463aac5f\\other.wav",
+        "vocals": "workspace\\02_stems\\kristin-chenoweth-popular-from-wicked-original-broadway-cast-463aac5f\\vocals.wav"
+      },
+      "outputs": {
+        "wav": "workspace\\03_backing\\kristin-chenoweth-popular-from-wicked-original-broadway-cast-463aac5f-instrumental.wav",
+        "flac": "workspace\\03_backing\\kristin-chenoweth-popular-from-wicked-original-broadway-cast-463aac5f-instrumental.flac",
+        "mp3": "workspace\\03_backing\\kristin-chenoweth-popular-from-wicked-original-broadway-cast-463aac5f-instrumental.mp3"
+      },
+      "duration_sec": 225.74,
+      "bpm": 89.1,
+      "key": "C major",
+      "key_confidence": 0.39,
+      "source_lufs": -16.811458074321784,
+      "output_lufs": -21.42,
+      "error": null
+    },
+    "say-my-name-9da3d6ec": {
+      "id": "say-my-name-9da3d6ec",
+      "title": "Say My Name",
+      "source": "C:\\Users\\tjcal\\OneDrive\\Documents\\files\\my-songs\\Say My Name.mp3",
+      "added_at": 1790215314.4310586,
+      "ingested": true,
+      "separated": true,
+      "analyzed": true,
+      "mixed": true,
+      "source_wav": "workspace\\01_source\\say-my-name-9da3d6ec.wav",
+      "stem_paths": {
+        "bass": "workspace\\02_stems\\say-my-name-9da3d6ec\\bass.wav",
+        "drums": "workspace\\02_stems\\say-my-name-9da3d6ec\\drums.wav",
+        "other": "workspace\\02_stems\\say-my-name-9da3d6ec\\other.wav",
+        "vocals": "workspace\\02_stems\\say-my-name-9da3d6ec\\vocals.wav"
+      },
+      "outputs": {
+        "wav": "workspace\\03_backing\\say-my-name-9da3d6ec-instrumental.wav",
+        "flac": "workspace\\03_backing\\say-my-name-9da3d6ec-instrumental.flac",
+        "mp3": "workspace\\03_backing\\say-my-name-9da3d6ec-instrumental.mp3"
+      },
+      "duration_sec": 235.31,
+      "bpm": 184.6,
+      "key": "A# major",
+      "key_confidence": 0.28,
+      "source_lufs": -9.964848546284882,
+      "output_lufs": -16.0,
+      "error": null
+    },
+    "suddenly-seymour-45-rpm-single-rare-1986-little-shop-of-horr-458c9712": {
+      "id": "suddenly-seymour-45-rpm-single-rare-1986-little-shop-of-horr-458c9712",
+      "title": "Suddenly, Seymour - 45 RPM Single - RARE - 1986 - Little Shop of Horrors",
+      "source": "C:\\Users\\tjcal\\OneDrive\\Documents\\files\\my-songs\\Suddenly, Seymour - 45 RPM Single - RARE - 1986 - Little Shop of Horrors.mp3",
+      "added_at": 1790215314.4322717,
+      "ingested": true,
+      "separated": true,
+      "analyzed": true,
+      "mixed": true,
+      "source_wav": "workspace\\01_source\\suddenly-seymour-45-rpm-single-rare-1986-little-shop-of-horr-458c9712.wav",
+      "stem_paths": {
+        "bass": "workspace\\02_stems\\suddenly-seymour-45-rpm-single-rare-1986-little-shop-of-horr-458c9712\\bass.wav",
+        "drums": "workspace\\02_stems\\suddenly-seymour-45-rpm-single-rare-1986-little-shop-of-horr-458c9712\\drums.wav",
+        "other": "workspace\\02_stems\\suddenly-seymour-45-rpm-single-rare-1986-little-shop-of-horr-458c9712\\other.wav",
+        "vocals": "workspace\\02_stems\\suddenly-seymour-45-rpm-single-rare-1986-little-shop-of-horr-458c9712\\vocals.wav"
+      },
+      "outputs": {
+        "wav": "workspace\\03_backing\\suddenly-seymour-45-rpm-single-rare-1986-little-shop-of-horr-458c9712-instrumental.wav",
+        "flac": "workspace\\03_backing\\suddenly-seymour-45-rpm-single-rare-1986-little-shop-of-horr-458c9712-instrumental.flac",
+        "mp3": "workspace\\03_backing\\suddenly-seymour-45-rpm-single-rare-1986-little-shop-of-horr-458c9712-instrumental.mp3"
+      },
+      "duration_sec": 250.36,
+      "bpm": 112.3,
+      "key": "A major",
+      "key_confidence": 0.96,
+      "source_lufs": -12.373893953181744,
+      "output_lufs": -17.87,
+      "error": null
+    },
+    "who-id-be-0127cdab": {
+      "id": "who-id-be-0127cdab",
+      "title": "Who I'd Be",
+      "source": "C:\\Users\\tjcal\\OneDrive\\Documents\\files\\my-songs\\Who I'd Be.mp3",
+      "added_at": 1790215314.433393,
+      "ingested": true,
+      "separated": true,
+      "analyzed": true,
+      "mixed": true,
+      "source_wav": "workspace\\01_source\\who-id-be-0127cdab.wav",
+      "stem_paths": {
+        "bass": "workspace\\02_stems\\who-id-be-0127cdab\\bass.wav",
+        "drums": "workspace\\02_stems\\who-id-be-0127cdab\\drums.wav",
+        "other": "workspace\\02_stems\\who-id-be-0127cdab\\other.wav",
+        "vocals": "workspace\\02_stems\\who-id-be-0127cdab\\vocals.wav"
+      },
+      "outputs": {
+        "wav": "workspace\\03_backing\\who-id-be-0127cdab-instrumental.wav",
+        "flac": "workspace\\03_backing\\who-id-be-0127cdab-instrumental.flac",
+        "mp3": "workspace\\03_backing\\who-id-be-0127cdab-instrumental.mp3"
+      },
+      "duration_sec": 240.41,
+      "bpm": 95.7,
+      "key": "C# major",
+      "key_confidence": 0.21,
+      "source_lufs": -9.930456507188486,
+      "output_lufs": -16.8,
+      "error": null
+    }
+  }
+}
